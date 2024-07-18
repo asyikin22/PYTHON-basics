@@ -23,3 +23,33 @@ print(response.decode())
 
 #close the socket
 socket.close()
+
+#unicode and UTF-8
+
+#Representing simple strings
+print(ord('X'))   #88
+print(ord('z'))   #122
+print(ord('%'))   #37
+print(ord('!'))   #33
+
+#python3 and unicode
+q = b'abc'
+print(type(q))      #bytes
+
+r = 'こんにちは'
+print(type(r))      #str
+
+#urllib
+
+import urllib.request, urllib.parse, urllib.error
+
+fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+for line in fhand:
+    print(line.decode().strip())
+
+
+#reading web pages
+import urllib.request, urllib.parse, urllib.error
+fhand = urllib.request.urlopen("http://www.dr-chuck.com/page1.htm")
+for line in fhand:
+    print(line.decode().rstrip())
