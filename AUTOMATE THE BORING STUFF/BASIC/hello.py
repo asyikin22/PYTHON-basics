@@ -1,36 +1,36 @@
 # This program says hello and asks for my name
 
-# print('Hello World')
-# print('What is your name?')     # ask for thier name
+print('Hello World')
+print('What is your name?')     # ask for thier name
 
-# myName = input()
+myName = input()
 
-# print('It is nice to meet you, ' + myName)
+print('It is nice to meet you, ' + myName)
 
-# print('The length of your name is:')
-# print(len(myName))
+print('The length of your name is:')
+print(len(myName))
 
-# print('What is your age?')      # ask for thier age
+print('What is your age?')      # ask for thier age
 
-# myAge = input()
+myAge = input()
 
-# print('You will be ' + str(int(myAge) +1) + ' in a year.')
+print('You will be ' + str(int(myAge) +1) + ' in a year.')
 
-# #secret password
-# password = open("failRahsia.txt")
-# passwordRahsia = password.read().strip()
-# password.close()
+#secret password
+password = open("failRahsia.txt")
+passwordRahsia = password.read().strip()
+password.close()
 
-# taipPassword = input('Masukkan Password: ')
+taipPassword = input('Masukkan Password: ')
 
-# if taipPassword == 'abcde':
-#     print("Password ini salah, sila cuba sekali lagi")
+if taipPassword == 'abcde':
+    print("Password ini salah, sila cuba sekali lagi")
     
-# elif taipPassword == passwordRahsia:
-#     print("Sila masuk ke website")
+elif taipPassword == passwordRahsia:
+    print("Sila masuk ke website")
     
-# else: 
-#     print("Anda tidak dibenarkan masuk!")
+else: 
+    print("Anda tidak dibenarkan masuk!")
 
 #math operation
 exponent = 2 ** 3
