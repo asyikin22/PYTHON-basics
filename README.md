@@ -7,6 +7,10 @@
 * Author: Charles Severance
 * Link: https://www.py4e.com/
 
+# Errors-solutions
+
+![image](https://github.com/user-attachments/assets/87e1b535-b0e6-4fcd-8ce8-75b1262445a4)
+
 # PY4E
 
 -------------
