@@ -15,3 +15,19 @@ print('What is your age?')      # ask for thier age
 myAge = input()
 
 print('You will be ' + str(int(myAge) +1) + ' in a year.')
+
+#secret password
+password = open("failRahsia.txt")
+passwordRahsia = password.read().strip()
+password.close()
+
+taipPassword = input('Masukkan Password: ')
+
+if taipPassword == 'abcde':
+    print("Password ini salah, sila cuba sekali lagi")
+    
+elif taipPassword == passwordRahsia:
+    print("Sila masuk ke website")
+    
+else: 
+    print("Anda tidak dibenarkan masuk!")
