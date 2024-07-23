@@ -56,14 +56,14 @@ print(x)
 print(y)
 print(z)
 
-# (print('**not and not in operators - ex 2**'))
-# negaraSaya = ['Malaysia', "Indonesia", "Thailand"]
-# print("Anda berasal dari mana?")
-# negara = input()
-# if negara not in negaraSaya:
-#     print("Maaf, negara anda tiada dalam senarai 😔")
-# else:
-#     print(f"Anda berasal dari {negara}")
+(print('**not and not in operators - ex 2**'))
+negaraSaya = ['Malaysia', "Indonesia", "Thailand"]
+print("Anda berasal dari mana?")
+negara = input()
+if negara not in negaraSaya:
+    print("Maaf, negara anda tiada dalam senarai 😔")
+else:
+    print(f"Anda berasal dari {negara}")
 
 #random.choice() + random.shuffle()
 print("random.choice() + random.shuffle()")
