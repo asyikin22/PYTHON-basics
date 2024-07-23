@@ -175,6 +175,162 @@
      
      ![image](https://github.com/user-attachments/assets/22d866a3-ce4c-4d4d-9cf7-28f8046abd59)
 
-     
+# FUNCTIONS
+
+--------------------
+**Basic Function**
+--------------------
+
+![image](https://github.com/user-attachments/assets/d0ce2ef9-b5be-4999-8127-5fb7c6b582f8)
+
+--------------------
+**Def statement with Parameters**
+--------------------
+- Parameters are variables that contain arguments
+- When a function is called with arguments, the arguments are stored in the parameters
+
+  ![image](https://github.com/user-attachments/assets/a28aeb2f-a253-4110-b09e-70bcf3fff85b)
+
+--------------------
+**Return Values and Return Statement**
+--------------------
+1) **Return Value**: the value that a function call evaluates.
+2) **Return Statement**: The 'return' keyword. The value or expression that the function should return.
+
+  ![image](https://github.com/user-attachments/assets/e1b345fe-ef70-4270-9963-2ceb114651aa)
+
+--------------------
+**The NONE value**
+--------------------
+- Other languages: null, nil, undefines
+- Meaning: Absence of value
+- Syntax: Capital N
+
+--------------------
+**Optional Parameters**
+--------------------
+- End - disable newline at the end of function call
+- Sep - separates values with single space
+
+  ![image](https://github.com/user-attachments/assets/38ea0024-14f0-430b-9369-2cdc36899062)
+
+--------------------
+**Call Stack**
+--------------------
+- It's how Python remembers where to return the execution after each function call
+- It remembers which line of code called the function so that the execution can return there when it encounters a return statement
+- Function calls return to the line number they were called from.
+
+    ![image](https://github.com/user-attachments/assets/81ce31e4-ce2c-4c9e-9713-ac6ce53e76b7)
+
+--------------------
+**Try and Error**
+--------------------
+- Error can be handled with 'try' and 'except' statements
+- The code that could potentially have an error is put in 'try' clause
+- The program execution moves to the start of a following 'except' clause if an error happens
+- Any errors that occur in function calls in a try block will always be caught.
+  
+  ![image](https://github.com/user-attachments/assets/d6b08da7-0d6a-4a75-8941-ffc299dd1f45)
+
+
+# LISTS
+
+--------------------
+**WORKING WITH LISTS**
+--------------------
+
+![image](https://github.com/user-attachments/assets/a7b999aa-5157-4fce-bc2d-34c4b90e2d72)
+
+**Explanation**:
+* Note that we use While loop to execute program where we don’t know the number of iterations
+* we don’t know how many cat names the user will put in
+* For loop is used when we know the number of iterations.
+* we know the number of cat names when user reaches the break statement in while loop
+  
+  ![image](https://github.com/user-attachments/assets/d353d3f5-65ae-4699-821a-b87a039974f2)
+
+--------------------
+**range(someList)**
+--------------------
+* range(someList)) is used with a for loop to iterate over the indexes of a list
+* The code in the loop can access the index (variable 'i') AND the value at that index.
+* 'i' needs to be converted to string because it's an integer representing the index of the current element in the list
+
+  ![image](https://github.com/user-attachments/assets/888e3b0e-236b-4953-9fb1-5def74937012)
+
+--------------------
+**The 'in' and 'not' in operators**
+--------------------
+* To determine whether a value is or is not in a list
+* It will evaluate to a Boolean value or string messages
+
+![image](https://github.com/user-attachments/assets/21bece17-8846-4a46-be47-dae7e771ae42)
+
+--------------------
+**randome.choice()**
+--------------------
+- Random.choice() will return a randomly selected item from the list.
+- Random.shuffle() will re-order the items in a list
+
+  ![image](https://github.com/user-attachments/assets/36c78bbd-cd0c-4ac3-b278-9a204a4bd94c)
+
+--------------------
+**Methods**
+--------------------
+
+- It's called on a value
+- It's a function that is associated with an object
+- It's used to define the behaviors of an object created from a class
+- Types:
+    1) Index() method
+    2) Append() method - end of list
+    3) Insert() method - any index in the list
+    4) Remove() method
+    5) Sort() method
+    6) Sort(reverse=True) - sort in reverse order
+    7) Sort(key=str.lower) - sort in regular alphabetical order
+    8) Reverse()
+
+--------------------
+**Sequence data types**
+--------------------
+
+  ![image](https://github.com/user-attachments/assets/7077564e-5163-4bff-a4fb-05f814120d8c)
+
+--------------------
+**Tuple**
+--------------------
+
+- It's typed with parentheses (…)
+- It's immutable
+- Similarity with list:
+    1) Sequence type = ordered collections
+    2) Indexing and slicing = we can access elements by their index and perform slicing operations on them
+    3) Heterogenous = they can store items of different data types
+    4) Nested structures = both can contain other lists or tuples as elements
+       
+![image](https://github.com/user-attachments/assets/5c56ce66-5083-43b8-b7d5-dbb3e36b0c35)
+
+--------------------
+**list() and tuple() functions**
+--------------------
+
+  ![image](https://github.com/user-attachments/assets/5a4f462d-f709-4ab7-850d-5e3a77859d27)
+
+
+--------------------
+**id() functions**
+--------------------
+
+- Unique identifier of the object
+- Memory address of the object
+- Object lifetime - it remains constant for the object's lifetime
+- Use case:
+    1) Object comparison
+    2) Debugging
+
+![image](https://github.com/user-attachments/assets/f2b5505e-daeb-4576-95d8-59f6ec0f091c)
+
 
 
