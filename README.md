@@ -332,5 +332,72 @@
 
 ![image](https://github.com/user-attachments/assets/f2b5505e-daeb-4576-95d8-59f6ec0f091c)
 
+# DICTIONARIES
+
+- Mutable collection of many values
+- It can use many different data types
+  1) Integers
+  2) Floats
+  3) String
+  4) Tuples
+- Indexes = keys
+- Key with its associated value is called key-value pair
+- Syntax: {braces}
+- Items are unordered
+
+--------------------
+**Basic Program**
+--------------------
+
+![image](https://github.com/user-attachments/assets/ec5ac3c6-9aaa-4086-ab98-36b65bd530a1)
+
+--------------------
+**Methods**
+--------------------
+- They will return list-like values of the dictionary's KEYS, VALUES or BOTH KEYS + VALUES
+  1) Keys()
+  2) Values()
+  3) Items()
+
+     ![image](https://github.com/user-attachments/assets/e940703f-8909-40b3-b37a-3bb9e565916d)
+
+--------------------
+**Multiple Assignments**
+--------------------
+
+![image](https://github.com/user-attachments/assets/407f4efe-0da9-451e-bd82-a9a87508a690)
+
+--------------------
+**'not' + 'not in' operator**
+--------------------
+
+![image](https://github.com/user-attachments/assets/ecaf16a5-5962-4625-9cb0-1099c8b0479a)
+
+--------------------
+**get() method**
+--------------------
+
+- It takes 2 arguments
+  1) Keys of the value to retrieve
+  2) Fallback value if the key does not exist
+
+  ![image](https://github.com/user-attachments/assets/bfe9465c-a6a6-4734-b736-2db82c391989)
+
+--------------------
+**Nested Dictionaries and List**
+--------------------
+ - Dictionaries and  list that contain other dictionaries and lists
+ - Lists are useful to contain an ordered series of values
+ - Dictionaries are useful to associating keys with values
+
+   ![image](https://github.com/user-attachments/assets/b3f2a0d1-32a6-45f4-845d-2bad02ae2ce5)
+
+--------------------
+**Practice Q**
+--------------------
+
+![image](https://github.com/user-attachments/assets/b103d17a-2c0e-4736-8a78-f8105df09530)
+
+
 
 
