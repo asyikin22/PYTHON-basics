@@ -37,3 +37,6 @@ while True:
 print("Nama kucing awak adalah: ")
 for nama in namaKucing:
     print(" ", nama)
+
+
+
