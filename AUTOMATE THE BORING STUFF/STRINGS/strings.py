@@ -130,3 +130,22 @@ print('N: \n', ord("N"))
 print("Character string of integer 12345: ", chr(12345))
 print("Character string of integer 9999: ", chr(77))
 print("Character string of integer 9: ", chr(902))
+
+#practice questions
+print('Q6:')
+print('hello, world!'[1])    #e
+print('hello, world!'[0:5])  #hello
+print('hello, world!'[:5])   #hello
+print('hello, world!'[3:])   #lo, world   
+
+print('\nQ7:')
+print('hello'.upper())
+print('hello'.upper().isupper())
+print('hello'.upper().lower())
+
+print('\nQ8:')
+abc = 'Remember, remember, the first of November.'
+print(abc.split())
+
+fgh = " - "
+print(fgh.join('There can be only one.'.split()))
