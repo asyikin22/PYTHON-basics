@@ -398,6 +398,63 @@
 
 ![image](https://github.com/user-attachments/assets/b103d17a-2c0e-4736-8a78-f8105df09530)
 
+# STRINGS
 
+--------------------
+**Working with strings**
+--------------------
+- String literals
+- Double quotes
+- Escape characters (\)
+- Raw strings
+- Multiline strings with triple quotes
+- Multiline comments
+- Indexing and slicing strings
+- 'in' and 'not in' operators
+- Putting strings inside other strings
+
+--------------------
+**String methods**
+--------------------
+- Upper() - letters converted to uppercase
+- Lower() - letters converted to lower case
+- isupper()
+- islower()
+
+--------------------
+**The isX() method**
+--------------------
+* isalpha() - returns true if the string consists only of letters AND not blank
+* isalnum() -  returns true if the string consists only of letters and numbers AND not blank
+* isdecimal() - returns true if the strings consists only of numeric characters AND not blank
+* isspace() - returns true if the string consists only of spaces, tabs and newlines AND not blank
+* istitle() - returns true if the strings consists only of words that start with an uppercase, followed by lowercase.
+
+![image](https://github.com/user-attachments/assets/4ebcbd35-6752-4524-970d-e6998155c060)
+
+--------------------
+**More methods**
+--------------------
+- startswith()
+- endswith()
+- Join()
+- Split()
+- Partition()
+- Justifying text
+    1) rjust()
+    2) ljust()
+    3) Center()
+- Whitespace
+    1) Strip()
+    2) rstrip()
+    3) lstrip()
+
+--------------------
+**MINI PROGRAM**
+--------------------
+
+**TITLE: MULTI-CLIPBOARD AUTOMATIC MESSAGES**
+
+![image](https://github.com/user-attachments/assets/cae0882e-d5d3-4e4f-bb7f-7588be92ab20)
 
 
