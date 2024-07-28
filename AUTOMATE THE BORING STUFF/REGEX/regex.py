@@ -133,11 +133,20 @@ print(mo.group(2))
 print(mo.groups())
 
 #substituting string with sub() method
-print("\nsub() method")
+print("\nsub() method - censor whole name")
 secretText = 'Officer Asyikin gave the secret files to Officer Lily'
 name = re.compile(r'Officer \w+')
 secret = name.sub('CENSORED', secretText)
 print(secretText)
 print(secret)
 
+print("\nsub() method - censor first letter")
+secretText = '''Agent Austin told Agent Liam that Agent Asyikin knew
+Agent Lily was a double agent'''
+secretName = re.compile(r'Agent (\w)\w*')
+secretAgent = secretName.sub(r'\1****', secretText)
+print(secretAgent)
+
+#Practice Q
+print(Q)
 
