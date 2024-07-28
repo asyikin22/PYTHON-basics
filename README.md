@@ -457,4 +457,108 @@
 
 ![image](https://github.com/user-attachments/assets/cae0882e-d5d3-4e4f-bb7f-7588be92ab20)
 
+# REGEX
 
+* It's akin to search function = ctrl + F
+* They allow you to specify a pattern of text to search for
+* Mobile number in USA
+    1) 3 digit area code - 3 digits - hyphen - 4 digits
+    2) 123 - 456 - 7899
+* Email address: asyikin@gmail.com ---> @ symbol
+* Social security # ---> 9 digits, 2 hyphens
+* Social  media hashtag #
+
+--------------------
+**Finding patterns without regex**
+--------------------
+
+* MY phone number - 017-1234567 (3 digits, hyphen, 7 digits)
+  ![image](https://github.com/user-attachments/assets/9b08feb8-7333-4768-8b78-1db1c2ea1c02)
+
+--------------------
+**Using Regular Expression**
+--------------------
+- Regexes are description for a pattern of text
+- 'r' stands for raw string
+- A \d stands for a digit character ---> any single numeral from 0 to 9
+- Pattern ---> re.compile() ---> regex object created ---> search() ---> store in match object variable ---> group()
+
+  ![image](https://github.com/user-attachments/assets/d0479ca2-aa23-4c16-a67e-0957a52727f4)
+
+--------------------
+**Grouping with parentheses**
+--------------------
+- If we want to separate carrier code from the rest of the number, we can add parentheses to create groups
+- Then we can use the group() match object method to grab the matching text from just one group
+- 1st () ---> group 1
+- 2nd () ---> group 2
+- Passing these integers to the group() will return different parts of the matched text.
+- Passing 0 will return entire matched text
+- If you'd like to retrieve all group at once, use groups() method, plural form
+- To escape unwanted characters, use backslash (\)
+  
+  ![image](https://github.com/user-attachments/assets/85776a1c-e81a-492d-8f2f-5a8f5ee36184)
+
+--------------------
+**Matching groups with Pipe**
+--------------------
+- ( | ) is a pipe
+- We use to match one of many expressions'
+- Use question mark to math optionally
+- Pass re.I or re.IGNORECASE as second argument to re.compile() will make the matching case insensitive
+  
+  ![image](https://github.com/user-attachments/assets/0e58b22e-63c3-4cae-8f5e-52c84250d816)
+
+
+--------------------
+**Optional marching with the question mark**
+--------------------
+  ![image](https://github.com/user-attachments/assets/16915ac4-26da-4957-87af-80b56dbd55c9)
+
+--------------------
+**Greedy and non-greedy matching**
+--------------------
+- Python's regular expressions are greedy by default
+- In ambiguous situations they will match the longest string possible
+- The non-greedy (lazy) version of the braces which matches the shortest string possible has the closing brace followed by a question mark
+
+  ![image](https://github.com/user-attachments/assets/e84929c5-f90a-486d-8b19-96a9ccea3d08)
+
+--------------------
+**The findall() method**
+--------------------
+
+  - Search() will return a match object of the first matched text in the searched strig
+  - Findall() method will return the strings of every match in the searched string
+  - As long as there are no groups in the regular expression
+
+--------------------
+**Character Classes**
+--------------------
+
+  ![image](https://github.com/user-attachments/assets/05e13453-d3a1-4ec4-91df-d5873217a1c0)
+
+--------------------
+**Regex Symbols**
+--------------------
+  ![image](https://github.com/user-attachments/assets/f9c138bb-c7a9-429b-8114-f1f1697b953e)
+
+--------------------
+**sub() method**
+--------------------
+- it passed two arguments
+  1) String to replace any matches
+  2) String for the regular expression
+- this method returns a string with the substitutions applied
+
+  ![image](https://github.com/user-attachments/assets/ed3d2287-418e-4984-9f8e-30fbb56e7288)
+
+--------------------
+**Mini Project**
+--------------------
+
+- Objective: Extracting Phone number and Email address
+
+  ![image](https://github.com/user-attachments/assets/b0b90d89-6534-4477-bc58-c5d6e05748ba)
+
+  
