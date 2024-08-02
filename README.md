@@ -561,4 +561,95 @@
 
   ![image](https://github.com/user-attachments/assets/b0b90d89-6534-4477-bc58-c5d6e05748ba)
 
-  
+# INPUT VALIDATION
+
+- Checks the values entered by the user are formatted correctly ---> Text from input() function
+- It can also prevent bugs or security vulnerabilities
+- Typically it's performed by repeatedly asking the user for input until a valid responses is entered
+
+   ![image](https://github.com/user-attachments/assets/8f8ddfd9-0d1c-4606-a779-ef736b7a1fa0)
+
+--------------------
+**pyinputplus**
+--------------------
+
+- It contains function similar to input() for several kinds of data
+- PIP will reprompt for input if users enters invalid input
+- The as pyip code in the import statement saves us from typing pyinputplus every time we want to call a PyInputPlus function
+- - It puts a limit for the numbers of times it reprompts users and a timeout if users are required to respond within a time limit
+- By default, blank input is not allowed unless the blank keyword argument is set to TRUE
+- Type of inputs:
+
+  ![image](https://github.com/user-attachments/assets/d03229e8-d41e-4830-ba17-1e67e6fae378)
+
+  ![image](https://github.com/user-attachments/assets/0802227f-336b-48dd-82b2-7a1138f6412a)
+
+  ![image](https://github.com/user-attachments/assets/9a52b956-769a-41d9-9422-a08cb2c019c7)
+
+
+--------------------
+**The min, max, greaterThan and lessThan keyword arguments**
+--------------------
+
+  ![image](https://github.com/user-attachments/assets/206ed2ec-311d-44ba-99bd-5dc229a6a7cb)
+
+--------------------
+**The limit, timeout and default keyword argument**
+--------------------
+- Pyip will continue to ask users for valid input forever by default
+- Limit determines how many attempts a pyip function will make to receive valid input before giving up
+- Timeout determines how many seconds the user has to enter before pyip function gives up
+
+  ![image](https://github.com/user-attachments/assets/50582aa0-0c7a-480b-96bb-0eba6eb252b6)
+
+--------------------
+**Mini Program 1**
+--------------------
+**Steps**:
+ 1) Ask user if they'd like to know how to keep an idiot busy for hours
+ 2) If the user answers no, quit the program
+ 3) If the user answers yes, repeat step 1.
+
+**Logic**:
+  - while True creates an infinite loop that continues to run until it encounter s break statement
+  - pyip.inputYesNo() is called to ensure this function call will not return until users enter a valid response
+  - If no is returned, the program breaks out of the infinite loop and proceed to the last line
+  - Otherwise the look will keep iterating.
+
+    ![image](https://github.com/user-attachments/assets/b87c680b-2b9b-4a20-b210-2cd589203544)
+
+--------------------
+**Mini Program 2**
+--------------------
+
+**Summary**
+- Title: Multiplication quiz
+- A timed multiplication quiz ---> poses 10 multiplication problems to the users where the valid input is the problem's correct answer.
+- Keyword argument used:
+    1) allowRegexes
+    2) blockRegexes
+    3) Timeout
+    4) Limit
+
+**Logic**
+- Keep track of how many questions the program asks and how many correct answers the user gives
+- Using variable that stores number of questions and the correct answer
+- A for loop will repeatedly pose a random multiplication problem 10 times
+- Inside the for loop, the program will pick 2 single digit numbers to multiply ---> They're used to create prompt
+- pyip.inputStr() function will handle most of the features of the quiz program
+
+  ![image](https://github.com/user-attachments/assets/ad590561-0c3c-419c-8809-ad4275c5140d)
+
+--------------------
+**Mini Program 3**
+--------------------
+
+  - Recipe maker
+  - Write a program that asks users for their nasi lemak preferences
+  - Use pyinputplus to make sure valid input are entered.
+
+  ![image](https://github.com/user-attachments/assets/750bc431-8788-4b37-ac19-fc4f5d5b28c7)
+
+
+
+
