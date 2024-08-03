@@ -82,3 +82,27 @@ response = pyip.inputMenu(
     numbered=True
 )
 print('Anda telah memilih', response)
+
+#inputStr()
+import pyinputplus as pyip
+response = pyip.inputStr(prompt="Masukkan suatu perkataan: \n",
+allowRegexes=[r'^[a-zA-Z]+$'],
+blockRegexes=[('.*', 'Ini bukan perkataan!')])
+print(f'perkataan yang anda masukkan: {response}')
+
+#inputDateTime()
+import pyinputplus as pyip
+tarikhMasa = pyip.inputDatetime(
+    prompt = 'Apa tarikh hari ini dan sekarang pukul berapa?: \n',
+    formats=['%d/%m/%Y %H:%M'])
+print(f'Masa + tarikh sekarang: {tarikhMasa}')
+
+#inputBool()
+import pyinputplus as pyip
+isTrue = pyip.inputBool(prompt='I am beautiful?\n')
+if isTrue:
+    print('Aw thanks 😊')
+else:
+    print('You\'re not very nice, are you 😢')
+
+
